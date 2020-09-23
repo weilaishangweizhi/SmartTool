@@ -1,0 +1,147 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    //可以自定义图片大小的radiobutton   MainRadioButton
+    <declare-styleable name="MyRadioButton">
+        <attr name="drawableSize" format="dimension"/>
+        <attr name="drawableTop" format="reference"/>
+        <attr name="drawableLeft" format="reference"/>
+        <attr name="drawableRight" format="reference"/>
+        <attr name="drawableBottom" format="reference"/>
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="PagerSlidingTab">
+        <attr name="indicatorColor" format="color" />
+        <attr name="underlineColor" format="color" />
+        <attr name="dividerColor" format="color" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="underlineHeight" format="dimension" />
+        <attr name="pst_dividerPadding" format="dimension" />
+        <attr name="tabPaddingLeftRight" format="dimension" />
+        <attr name="scrollOffset" format="dimension" />
+        <attr name="tabBackgrounds" format="reference" />
+        <attr name="sameLine" format="boolean" />
+        <attr name="pst_textAllCaps" format="boolean" />
+    </declare-styleable>
+
+    //首页banner  样式
+    <style name="BannerDefaultStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <!-- 自定义属性在styles.xml中不需要命名空间,直接用属性名就可以了 -->
+        <!-- 开启自动轮播 -->
+        <item name="banner_pointAutoPlayAble">true</item>
+        <!-- 自动轮播的时间间隔 -->
+        <item name="banner_pointAutoPlayInterval">10000</item>
+        <!-- 指示点容器背景 -->
+        <item name="banner_pointContainerBackground">@color/transparency</item>
+        <!-- 指示点背景 -->
+        <item name="banner_pointDrawable">@drawable/bga_banner_selector_point_hollow</item>
+        <!-- 指示点容器左右内间距 -->
+        <item name="banner_pointContainerLeftRightPadding">10dp</item>
+        <!-- 指示点上下外间距 -->
+        <item name="banner_pointTopBottomMargin">6dp</item>
+        <!-- 指示点左右外间距 -->
+        <item name="banner_pointLeftRightMargin">3dp</item>
+        <!-- 指示器的位置 -->
+        <item name="banner_indicatorGravity">bottom|center_horizontal</item>
+        <!-- 页码切换过程的时间长度 -->
+        <item name="banner_pageChangeDuration">1000</item>
+        <!-- 提示文案的文字大小 -->
+        <item name="banner_tipTextSize">10sp</item>
+        <!-- 提示文案的文字颜色 -->
+        <item name="banner_tipTextColor">@android:color/white</item>
+        <!-- 加载网络数据时覆盖在BGABanner最上层的占位图 -->
+        <item name="banner_placeholderDrawable">@color/red_pic_bg</item>
+    </style>
+
+
+    <style name="tv_zijianju_12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColor">@color/black3</item>
+        <item name="android:textSize">@dimen/text_xiao</item>
+    </style>
+
+
+    <style name="tv_zijianju_15">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+        <item name="android:textColor">@color/black3</item>
+        <item name="android:textSize">@dimen/text_xiao</item>
+    </style>
+
+
+    //通用dialog
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+    </style>
+
+
+    <style name="cai_dialog_style">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+
+
+    <!-- 自定义BottomPushPopupWindow动画，从底部弹出 -->
+    <style name="BottomPushPopupWindow" parent="android:Animation">
+        <!-- 进入时的动画 -->
+        <item name="android:windowEnterAnimation">@anim/pw_push_bottom_in</item>
+        <!-- 退出时的动画 -->
+        <item name="android:windowExitAnimation">@anim/pw_push_bottom_out</item>
+    </style>
+
+    <!-- 自定义TopPushPopupWindow动画，从顶部弹出 -->
+    <style name="TopPushPopupWindow" parent="android:Animation">
+        <!-- 进入时的动画 -->
+        <item name="android:windowEnterAnimation">@anim/pw_push_top_in</item>
+        <!-- 退出时的动画 -->
+        <item name="android:windowExitAnimation">@anim/pw_push_top_out</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="str_sure">确认</string>
+    <string name="str_wangcheng">完成</string>
+    <string name="str_cancel">取消</string>
+</resources>

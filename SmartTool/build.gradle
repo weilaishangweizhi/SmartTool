@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+group='com.github.weilaishangweizhi'
+version = '1.0.0'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+//    //屏幕适配
+//    api 'me.jessyan:autosize:1.1.2'
+    //EventBus
+    api 'org.greenrobot:eventbus:3.1.1'
+    //actvivty滑动返回
+    api 'cn.bingoogolapple:bga-swipebacklayout:1.2.0@aar'
+    //大图 banner
+    implementation 'cn.bingoogolapple:bga-banner:3.0.0@aar'
+    //工具类
+    api 'com.blankj:utilcode:1.9.6'
+    //智能下拉刷新框架
+    api  'com.scwang.smart:refresh-layout-kernel:2.0.1'      //核心必须依赖
+    api  'com.scwang.smart:refresh-header-classics:2.0.1'    //经典刷新头
+    api  'com.scwang.smart:refresh-footer-classics:2.0.1'    //经典加载
+    api  'com.scwang.smart:refresh-footer-ball:2.0.1'        //球脉冲加载
+//    api  'com.scwang.smart:refresh-header-radar:2.0.1'       //雷达刷新头
+//    api  'com.scwang.smart:refresh-header-falsify:2.0.1'     //虚拟刷新头
+//    api  'com.scwang.smart:refresh-header-material:2.0.1'    //谷歌刷新头
+//    api  'com.scwang.smart:refresh-header-two-level:2.0.1'   //二级刷新头
+
+    //滑动监控view
+    api 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    //分包
+    api 'com.android.support:multidex:1.0.3'
+
+    //cai 新增okGo
+    api 'com.lzy.net:okgo:3.0.4'
+
+}
+
+
+
+
+
+

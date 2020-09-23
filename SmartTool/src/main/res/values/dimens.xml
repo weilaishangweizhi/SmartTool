@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="text_teda">26dp</dimen>
+    <dimen name="text_da">22dp</dimen>
+    <dimen name="text_da2">20dp</dimen>
+    <dimen name="text_zhong">18dp</dimen>
+    <dimen name="text_xiao">14dp</dimen>
+    <dimen name="text_texiao">12dp</dimen>
+
+    <dimen name="fengxi_xiao">3dp</dimen>
+    <dimen name="fengxi_zhong">10dp</dimen>
+    <dimen name="fengxi_da">20dp</dimen>
+
+    <dimen name="fengxi_textline_Spacing">5dp</dimen>
+
+
+</resources>

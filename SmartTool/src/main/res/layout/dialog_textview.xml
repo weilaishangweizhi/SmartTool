@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_yuanjiao_white_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="120dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="标题"
+                android:textColor="@color/black3"
+                android:textSize="@dimen/text_da" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容内容内容内容内容内容内容"
+                android:textColor="@color/black6"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black9" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="左"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_zhong" />
+
+            <View
+                android:id="@+id/view_xian"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/black9" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="右"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_zhong" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

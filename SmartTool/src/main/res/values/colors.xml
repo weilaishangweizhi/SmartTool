@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#f4f4f4</color>
+    <color name="colorPrimaryDark">#f4f4f4</color>
+    <color name="colorAccent">#ff1869af</color>
+
+
+    <color name="background_f2">#f2f2f2</color>
+    <color name="background">#F5F5F5</color>
+    <color name="background1">#F1F1F1</color>
+    <color name="background2">#E5E5E5</color>
+    <color name="background3">#E1E1E1</color>
+    <color name="background4">#D5D5D5</color>
+    <color name="background5">#D1D1D1</color>
+    <color name="background6">#C5C5C5</color>
+    <color name="background7">#C1C1C1</color>
+    <color name="background_line">#CDCED3</color>
+    <color name="qianlv">#a2dc4b</color>
+    <color name="divider">#ffe7e7e7</color>
+    <color name="huise_line">#b5b5b6</color>
+
+    <color name="search_backgroungcolor">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="black">#000000</color>
+    <color name="black2">#222222</color>
+    <color name="black3">#333333</color>
+    <color name="black4">#444444</color>
+    <color name="black5">#555555</color>
+    <color name="black6">#666666</color>
+    <color name="black7">#777777</color>
+    <color name="black7_t">#77777777</color>
+    <color name="black8">#888888</color>
+    <color name="black9">#999999</color>
+    <color name="black9_t">#88999999</color>
+    <color name="black10">#88555555</color>
+    <color name="heise_b">#55000000</color>
+    <color name="black_gesture">#d7e6f8</color>
+
+
+    <color name="labelColor">#0B273D</color>
+    <color name="labelColorChoose">#f44930</color>
+    <color name="cart_grey">#585858</color>
+    <color name="cart_grey_dark">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_bantou">#33ffffff</color>
+    <color name="red">#ffff1400</color>
+    <color name="red_bg">#d81e06</color>
+    <color name="red_pic_bg">#b00317</color>
+    <color name="green">#98d74a</color>
+    <color name="doulv">#99C85C</color>
+
+    <color name="green_light">#e6efe7</color>
+    <color name="blue">#3985dd</color>
+    <color name="lanse_bg">#3985dd</color>
+    <color name="text_lan">#3985dd</color>
+    <color name="blue_ice">#7720aee5</color>
+
+
+    <color name="moment_blue">#576d96</color>
+    <color name="transparency">#00000000</color>
+    <color name="shadow">#1e000000</color>
+    <color name="grey">#7a7e83</color>
+    <color name="grey_t">#cc7a7e83</color>
+    <color name="grey_d8">#4fd8d8d8</color>
+    <color name="statusbar">#f3f3f3</color>
+    <color name="grey_f6">#f6f6f6</color>
+    <color name="grey_bc">#bcbcbc</color>
+    <color name="light_gray">#ffebebeb</color>
+    <color name="deep_gray">#ff3b3b3b</color>
+    <color name="popup_main_background">#b0000000</color>
+
+    <color name="moment_bg_on">#fcfcfc</color>
+    <color name="moment_bg_off">#f1f1f1</color>
+    <color name="moment_titlebar_bg">#98d74a</color>
+    <color name="moment_titlebar_bg_two">#373b3e</color><!-- 微信标题栏颜色 -->
+    <color name="edit_text_hint">#cdcdcd</color>
+    <color name="orange">#FFA124</color>
+    <color name="orange2">#fb8d2c</color>
+    <color name="orange3">#fb6721</color>
+    <color name="orange4">#F7680A</color>
+    <color name="orange4_t">#88F7680A</color>
+    <color name="orange3_t">#88fb6721</color>
+    <color name="orange0">#fdefd7</color>
+    <color name="yellow">#f4ea2a</color>
+
+    <color name="glod">#D5AF5C</color>
+    <color name="jishi">#FFF2CA</color>
+    <color name="guanzhu">#F69B26</color>
+    <color name="yiguanzhu">#999999</color>
+    <color name="huxiangguanzhu">#666666</color>
+    <color name="actionbar">#eaeaea</color>
+
+    <color name="touming_black">#80000000</color>
+    <color name="line">#dcdcdc</color>
+
+</resources>

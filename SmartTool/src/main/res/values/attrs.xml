@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="com.hollysmart.daolantianxia.maps.TiledScrollView">
+        <attr name="file_pattern" format="string" />
+        <attr name="tile_width" format="integer" />
+        <attr name="tile_height" format="integer" />
+        <attr name="image_width" format="integer" />
+        <attr name="image_height" format="integer" />
+        <attr name="zoom_buttons" format="boolean" />
+    </declare-styleable>
+
+    
+<!--   cai  2015-8-12               -->
+    <declare-styleable name="FlowLayout">
+
+        <attr name="horizontalSpacing" format="dimension"/>
+
+        <attr name="verticalSpacing" format="dimension"/>
+
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+
+
+
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean"/>
+        <attr name="layout_horizontalSpacing" format="dimension"/>
+        <attr name="layout_verticalSpacing" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+
+
+    <!-- 手势密码 -->
+
+    <attr name="color_no_finger" format="color" />
+    <attr name="color_finger_on" format="color" />
+    <attr name="color_finger_up_correct" format="color" />
+    <attr name="color_finger_up_error" format="color" />
+    <attr name="count" format="integer" />
+    <attr name="preference_id" format="integer" />
+
+    <declare-styleable name="GestureLockViewGroup">
+        <attr name="color_no_finger" />
+        <attr name="color_finger_on" />
+        <attr name="color_finger_up_correct" />
+        <attr name="color_finger_up_error" />
+        <attr name="count" />
+        <attr name="preference_id" />
+    </declare-styleable>
+
+
+
+    <!-- 状态栏 -->
+    <declare-styleable name="StatusBarHeightView">
+        <attr name="use_type" format="integer">
+            <enum name="use_height" value="0" />
+            <enum name="use_padding_top" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+
+</resources>

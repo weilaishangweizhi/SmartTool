@@ -1,0 +1,3 @@
+include ':app'
+include ':SmartTool'
+rootProject.name = "SmartToolDemo"
