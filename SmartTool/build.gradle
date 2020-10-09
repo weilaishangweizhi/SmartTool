@@ -44,7 +44,10 @@ dependencies {
     //EventBus
     api 'org.greenrobot:eventbus:3.1.1'
     //actvivty滑动返回
-    api 'cn.bingoogolapple:bga-swipebacklayout:1.2.0@aar'
+    api 'cn.bingoogolapple:bga-swipebacklayout:2.0.1@aar'
+
+
+
     //大图 banner
     implementation 'cn.bingoogolapple:bga-banner:3.0.0@aar'
     //工具类
