@@ -4,16 +4,18 @@
 ## 功能介绍
 + CaiBaseActivity
     + 设置状态栏透明  
-       >  @Override  
+
+          @Override  
           public boolean setTranslucent() {  
-             return false;  
+                return false;  
           }  
+            
          return true 设置状态栏透明  false 不设置  
          相关文章:https://blog.csdn.net/u014418171/article/details/81223681
     + 初始化滑动返回  
-       > 必须在 Application 的 onCreate 方法中执行 BGASwipeBackHelper.init 来初始化滑动返回  
+      必须在 Application 的 onCreate 方法中执行 BGASwipeBackHelper.init 来初始化滑动返回  
+            
             public class App extends Application {
-
                 @Override
                 public void onCreate() {
                     super.onCreate();
@@ -27,6 +29,6 @@
                 }
             }  
             
-            相关文章：https://github.com/bingoogolapple/BGASwipeBackLayout-Android
+         相关文章：https://github.com/bingoogolapple/BGASwipeBackLayout-Android
     
     + activity转场动画设置
