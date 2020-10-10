@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.hollysmart.smarttool.R;
 import com.hollysmart.smarttool.statusbar.StatusBarUtil;
+import com.hollysmart.smarttool.value.Value;
 
 import cn.bingoogolapple.swipebacklayout.BGASwipeBackHelper;
 
@@ -23,9 +24,9 @@ public abstract class CaiBaseActivity extends AppCompatActivity implements View.
         initSwipeBackFinish();
         mContext = this;
         if (savedInstanceState != null) {
-            animType = savedInstanceState.getInt("animType");
+            animType = savedInstanceState.getInt(Value.ANIM_TYPE);
         }
-        animType = getIntent().getIntExtra("animType", 0);
+        animType = getIntent().getIntExtra(Value.ANIM_TYPE, 0);
 
         setContentView(layoutResID());
 
@@ -124,13 +125,13 @@ public abstract class CaiBaseActivity extends AppCompatActivity implements View.
     @Override
     public void startActivity(Intent intent) {
         super.startActivity(intent);
-        animEnter(intent.getIntExtra("animType", 0));
+        animEnter(intent.getIntExtra(Value.ANIM_TYPE, 0));
     }
 
     @Override
     public void startActivityForResult(Intent intent, int requestCode) {
         super.startActivityForResult(intent, requestCode);
-        animEnter(intent.getIntExtra("animType", 0));
+        animEnter(intent.getIntExtra(Value.ANIM_TYPE, 0));
     }
 
     @Override
@@ -140,25 +141,25 @@ public abstract class CaiBaseActivity extends AppCompatActivity implements View.
     }
     private void animEnter(int animType){
         switch (animType) {
-            case 1:
+            case Value.ANIM_TYPE_SHANG:
                 overridePendingTransition(R.anim.activity_enter_shang, R.anim.activity_yuandian);
                 break;
-            case 2:
+            case Value.ANIM_TYPE_XIA:
                 overridePendingTransition(R.anim.activity_enter_xia, R.anim.activity_yuandian);
                 break;
-            case 3:
+            case Value.ANIM_TYPE_LEFT:
                 overridePendingTransition(R.anim.activity_enter_left, R.anim.activity_yuandian);
                 break;
-            case 4:
+            case Value.ANIM_TYPE_RIGHT:
                 overridePendingTransition(R.anim.activity_enter_right, R.anim.activity_yuandian);
                 break;
-            case 5:
-                overridePendingTransition(R.anim.activity_enter_soufang, R.anim.activity_yuandian);
+            case Value.ANIM_TYPE_SUOFANG:
+                overridePendingTransition(R.anim.activity_enter_suofang, R.anim.activity_yuandian);
                 break;
-            case 6:
+            case Value.ANIM_TYPE_LONG_LEFT:
                 overridePendingTransition(R.anim.activity_enter_long_left, R.anim.activity_yuandian);
                 break;
-            case 7:
+            case Value.ANIM_TYPE_LONG_RIGHT:
                 overridePendingTransition(R.anim.activity_enter_long_right, R.anim.activity_yuandian);
                 break;
         }
@@ -166,25 +167,25 @@ public abstract class CaiBaseActivity extends AppCompatActivity implements View.
 
     private void animExit(){
         switch (animType) {
-            case 1:
+            case Value.ANIM_TYPE_SHANG:
                 overridePendingTransition(R.anim.activity_yuandian, R.anim.activity_exit_shang);
                 break;
-            case 2:
+            case Value.ANIM_TYPE_XIA:
                 overridePendingTransition(R.anim.activity_yuandian, R.anim.activity_exit_xia);
                 break;
-            case 3:
+            case Value.ANIM_TYPE_LEFT:
                 overridePendingTransition(R.anim.activity_yuandian, R.anim.activity_exit_left);
                 break;
-            case 4:
+            case Value.ANIM_TYPE_RIGHT:
                 overridePendingTransition(R.anim.activity_yuandian, R.anim.activity_exit_right);
                 break;
-            case 5:
-                overridePendingTransition(R.anim.activity_yuandian, R.anim.activity_exit_soufang);
+            case Value.ANIM_TYPE_SUOFANG:
+                overridePendingTransition(R.anim.activity_yuandian, R.anim.activity_exit_suofang);
                 break;
-            case 6:
+            case Value.ANIM_TYPE_LONG_LEFT:
                 overridePendingTransition(R.anim.activity_yuandian, R.anim.activity_exit_long_left);
                 break;
-            case 7:
+            case Value.ANIM_TYPE_LONG_RIGHT:
                 overridePendingTransition(R.anim.activity_yuandian, R.anim.activity_exit_long_right);
                 break;
         }

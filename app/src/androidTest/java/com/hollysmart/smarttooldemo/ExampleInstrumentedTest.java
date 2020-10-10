@@ -1,4 +1,4 @@
-package com.hollysmart.smarttool;
+package com.hollysmart.smarttooldemo;
 
 import android.content.Context;
 

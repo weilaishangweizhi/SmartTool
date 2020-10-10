@@ -1,4 +1,4 @@
-package com.hollysmart.smarttool;
+package com.hollysmart.smarttooldemo;
 
 import android.view.View;
 
@@ -8,7 +8,7 @@ public class TestActivity extends CaiBaseActivity {
 
     @Override
     public int layoutResID() {
-        return 0;
+        return R.layout.activity_main;
     }
 
     @Override
