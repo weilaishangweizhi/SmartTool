@@ -46,6 +46,10 @@
           public final static int ANIM_TYPE_SUOFANG = 5; //放大进 缩小出
           public final static int ANIM_TYPE_LONG_LEFT = 6; //左进 左出 350毫秒
           public final static int ANIM_TYPE_LONG_RIGHT = 7; //右进 右出 350毫秒
-          
-      
++ 数据库操作  
+    db包内为ormlite数据库项目，CityCodeBean、CityCodeDao为事例。DBHelper为工具类  
+    相关文章：https://blog.csdn.net/huangxiaoguo1/article/details/89180064  
+    GitHub地址：https://github.com/j256/ormlite-android  
+    
+ 
        
