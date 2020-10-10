@@ -31,4 +31,21 @@
             
          相关文章：https://github.com/bingoogolapple/BGASwipeBackLayout-Android
     
-    + activity转场动画设置
+    + activity转场动画设置  
+        例：  
+    
+          Intent intent = new Intent(mContext, TestActivity.class);
+          intent.putExtra(Value.ANIM_TYPE, Value.ANIM_TYPE_SHANG);
+          startActivity(intent);
+          
+          public final static String ANIM_TYPE = "animType";
+          public final static int ANIM_TYPE_SHANG = 1; //上进 上出
+          public final static int ANIM_TYPE_XIA = 2;   //下进 下出
+          public final static int ANIM_TYPE_LEFT = 3;  //左进 左出
+          public final static int ANIM_TYPE_RIGHT = 4; //右进 右出
+          public final static int ANIM_TYPE_SUOFANG = 5; //放大进 缩小出
+          public final static int ANIM_TYPE_LONG_LEFT = 6; //左进 左出 350毫秒
+          public final static int ANIM_TYPE_LONG_RIGHT = 7; //右进 右出 350毫秒
+          
+      
+       
