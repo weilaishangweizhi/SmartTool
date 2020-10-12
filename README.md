@@ -69,4 +69,40 @@
     + Mlog 自定日志  
 + 自定义View(views)  
     + MyLinearLayoutForListView 自定义LinearLayout,实现类似ListView功能，可动态添加子view  
-    + ZPopupWindow 自定义弹出的PopupWindow
+    + ZPopupWindow 自定义弹出的PopupWindow  
+
+## 第三方集成  
++ 屏幕适配  
+    gradle集成：api 'me.jessyan:autosize:1.1.2'  
+    相关文章：https://github.com/JessYanCoding/AndroidAutoSize  
++ Eventbus  
+    gradle集成：'org.greenrobot:eventbus:3.1.1'   
+    相关文章：https://github.com/JessYanCoding/AndroidAutoSize  
++ 大图banner  
+    gradle集成：api 'cn.bingoogolapple:bga-banner:3.0.0@aar'  
+    相关文章：https://github.com/bingoogolapple/BGABanner-Android  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
