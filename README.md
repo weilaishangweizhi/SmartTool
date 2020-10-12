@@ -95,7 +95,7 @@
         api  'com.scwang.smart:refresh-header-material:2.0.1'    //谷歌刷新头  
         api  'com.scwang.smart:refresh-header-two-level:2.0.1'   //二级刷新头  
       
-    相关文章：https://blankj.com/
+    相关文章：https://github.com/scwang90/SmartRefreshLayout/  
 + 网络框架okGo  
     gradle集成：api 'com.lzy.net:okgo:3.0.4'  
     相关文章：https://github.com/jeasonlzy/okhttp-OkGo  
