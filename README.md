@@ -81,28 +81,23 @@
 + 大图banner  
     gradle集成：api 'cn.bingoogolapple:bga-banner:3.0.0@aar'  
     相关文章：https://github.com/bingoogolapple/BGABanner-Android  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
++ 工具类utilcode  
+    gradle集成：api 'com.blankj:utilcode:1.9.6'  
+    相关文章：https://blankj.com/
++ 智能下拉刷新框架  
+    gradle集成：  
+        api  'com.scwang.smart:refresh-layout-kernel:2.0.1'      //核心必须依赖  
+        api  'com.scwang.smart:refresh-header-classics:2.0.1'    //经典刷新头  
+        api  'com.scwang.smart:refresh-footer-classics:2.0.1'    //经典加载  
+        api  'com.scwang.smart:refresh-footer-ball:2.0.1'        //球脉冲加载  
+        api  'com.scwang.smart:refresh-header-radar:2.0.1'       //雷达刷新头  
+        api  'com.scwang.smart:refresh-header-falsify:2.0.1'     //虚拟刷新头  
+        api  'com.scwang.smart:refresh-header-material:2.0.1'    //谷歌刷新头  
+        api  'com.scwang.smart:refresh-header-two-level:2.0.1'   //二级刷新头  
+      
+    相关文章：https://blankj.com/
++ 网络框架okGo  
+    gradle集成：api 'com.lzy.net:okgo:3.0.4'  
+    相关文章：https://github.com/jeasonlzy/okhttp-OkGo  
 
 
