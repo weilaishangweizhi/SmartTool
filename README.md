@@ -1,6 +1,6 @@
 # SmartTool
 ## Gradle应用
-    implementation 'com.github.weilaishangweizhi:SmartTool:1.0.0'
+    implementation 'com.github.weilaishangweizhi:SmartTool:tag'
 ## 功能介绍
 + CaiBaseActivity
     + 设置状态栏透明  
